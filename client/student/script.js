@@ -23,7 +23,7 @@ function validateForm(event) {
         
         console.log(data)
        localStorage.setItem("student_token", data.token);
-       location.replace("dashboard.html");
+       location.replace("leavepage/leave.html");
         
     })
     .catch(error => {

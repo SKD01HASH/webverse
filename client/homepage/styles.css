@@ -1,0 +1,141 @@
+body {
+  background-image: url('Unknown1.jpeg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1:before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.role-selection {
+  margin-top: 60px;
+}
+
+.role-link {
+  display: inline-block;
+  margin: 20px;
+  padding: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+.role-link.student {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #4285f4;
+}
+
+.role-link.warden {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #fbbc05;
+}
+
+.role-link.faculty {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #34a853;
+}
+
+.role-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.role-link i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.role-link.student i {
+  color: #4285f4;
+}
+
+.role-link.warden i {
+  color: #fbbc05;
+}
+
+.role-link.faculty i {
+  color: #34a853;
+}
+
+.role-link.student:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.role-link.warden:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.role-link.faculty:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.role-link.student:hover i {
+  color: #fff;
+}
+
+.role-link.warden:hover i {
+  color: #fff;
+}
+
+.role-link.faculty:hover i {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.role-link:nth-child(1) {
+  animation: fadeIn 0.6s ease-out 0.3s both;
+}
+
+.role-link:nth-child(2) {
+  animation: fadeIn 0.6s ease-out 0.6s both;
+}
+
+.role-link:nth-child(3) {
+  animation: fadeIn 0.6s ease-out 0.9s both;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faculty Registration</title>
+  <link rel="stylesheet" href="faculty_reg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Faculty Registration</h1>
+      <form id="registrationForm" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i>Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="empId"><i class="fas fa-id-card"></i>Employee ID:</label>
+          <input type="text" id="empId" name="empId" required>
+        </div>
+        <div class="form-group">
+          <label for="password"><i class="fas fa-lock"></i>Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="isHOD"><i class="fas fa-check-circle"></i>Head of Department:</label>
+          <select id="isHOD" name="isHOD" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="regscript.js"></script>
+</body>
+</html>
